@@ -34,7 +34,7 @@ function findMe()
 		var longitude = posicion.coords.longitude;
 		var imgURL = "https://maps.googleapis.com/maps/api/staticmap?center="+latitude+","+longitude+"&size=600x300&markers=color:red%7C"+latitude+","+longitude+"&key=AIzaSyAKNXDvttVTGjyVAutQH3TOXIiCFcbXyg8";
 		output.innerHTML = "<img src= '"+imgURL+"'>";
-		output.innerHTML = "<p>Latitud: "+latitude+"<br>Longitud: "+longitude+"</p>"
+		output.innerHTML = "<p>Latitud: "+latitude+"<br>Longitud: "+longitude+"</p>";
 	}
 	function error()
 	{
