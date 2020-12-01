@@ -2,6 +2,10 @@
 * {
 	box-sizing: border-box;
 }
+#map{
+	width: 600px;
+	height: 400px;
+}
 body{
 	margin: 0;
 	font-family: 'Roboto', sans-serif;
@@ -48,8 +52,7 @@ div,p{
 	text-align: center;
 }
 div{
-	width: 600px;
-	height: 400px;
+
 }
 p{
 	color: white;
