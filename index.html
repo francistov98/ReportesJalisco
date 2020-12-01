@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<title>Formulario de delitos</title>
 		<link rel="stylesheet" href="estilos.css">
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXMSKAqRTnSYO0Y-mgmZmDa0yxv1LvbTc&callback=initMap&libraries=&v=weekly" defer></script>
 	</head>
 	<body>			
 		<form action="src/form-result.php" target= "_blank">
@@ -27,7 +28,6 @@
 			<p>
 				Direccion de los hechos: <input type="text" name="localizacion">
 			</p>
-			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXMSKAqRTnSYO0Y-mgmZmDa0yxv1LvbTc"></script>
 			<div id="map"></div>
 			<p>Nombre del afectado: <input type="text" name="nombreAfectado"></p>
 			<p>Detalles del delito o incidente:<br><textarea name="detallesDelito"></textarea></p>
