@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Formulario de delitos</title>
+		<link rel="stylesheet" href="estilos.css">
+	</head>
+	<body>			
+		<form action="src/form-result.php" target= "_blank">
+			<h1>Reporte de la policia estatal</h1>
+			<p>Nombre de la persona que levanta el reporte: <input type="text" name="nombreLevantador"></p>
+			<p>Fecha del delito: <input type="date" name="fechaDelito"></p>
+			<p>
+				Tipo de delito ocurrido: 
+				<select name="tipoDelito">
+					<option>Robo</option>
+					<option>Asesinato</option>
+					<option>Asalto</option>
+					<option>Secuestro</option>
+					<option>Violencia domestica</option>
+					<option>Venta de drogas</option>
+					<option>Venta de productos ilegales</option>
+					<option>Otro</option>
+				</select>
+			</p>
+			<p>En caso de seleccionar otro, indiquelo: <input type="text" name="otroDelito"></p>			
+			<p>
+				Direccion de los hechos: <input type="text" name="localizacion">
+			</p>
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXMSKAqRTnSYO0Y-mgmZmDa0yxv1LvbTc"></script>
+			<div id="map"></div>
+			<p>Nombre del afectado: <input type="text" name="nombreAfectado"></p>
+			<p>Detalles del delito o incidente:<br><textarea name="detallesDelito"></textarea></p>
+			<p>Nombre del/los delincuente/s de saberlo: <input type="text" name="nombreDelincuente"></p>
+			<p>Caracteristicas de el/los delincuentes: <br><textarea name="detallesDelito"></textarea></p>
+			<input type="submit" value="Enviar el reporte">
+			<script src="form.js"></script>
+		</form>
+	</body>
+</html>
