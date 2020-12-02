@@ -28,7 +28,6 @@
 			<p>
 				Direccion de los hechos: <input type="text" name="localizacion">
 			</p>
-			<script src="form.js"></script>
 			<div id="map"></div>
 			<p>Nombre del afectado: <input type="text" name="nombreAfectado"></p>
 			<p>Detalles del delito o incidente:<br><textarea name="detallesDelito"></textarea></p>
@@ -36,6 +35,7 @@
 			<p>Caracteristicas de el/los delincuentes: <br><textarea name="detallesDelincuente"></textarea></p>
 			<p>Telefono de la persona que levanta el reporte: <input type="text" name="id_formulario"></p>
 			<input type="submit" name="enviarFormulario" value="Enviar el reporte">
+			<script src="form.js"></script>
 		</form>
 		<?php
 			include("enviarFormulario.php");
