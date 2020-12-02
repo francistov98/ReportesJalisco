@@ -33,8 +33,12 @@
 			<p>Detalles del delito o incidente:<br><textarea name="detallesDelito"></textarea></p>
 			<p>Nombre del/los delincuente/s de saberlo: <input type="text" name="nombreDelincuente"></p>
 			<p>Caracteristicas de el/los delincuentes: <br><textarea name="detallesDelito"></textarea></p>
-			<input type="submit" value="Enviar el reporte">
+			<p>Telefono de la persona que levanta el reporte: <input type="text" name="id_formulario"></p>
+			<input type="submit" name="enviarFormulario" value="Enviar el reporte">
 			<script src="form.js"></script>
 		</form>
+		<?php
+			include("enviarFormulario.php");
+		?>
 	</body>
 </html>
