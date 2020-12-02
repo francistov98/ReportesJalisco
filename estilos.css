@@ -3,15 +3,15 @@
 	box-sizing: border-box;
 }
 #map{
-	width: 600px;
+	width: 470px;
 	height: 400px;
+	text-align: center;
+	background-color: black;
 }
 body{
 	margin: 0;
 	font-family: 'Roboto', sans-serif;
 	background-image: url("src/background1.jpg");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
 }
 form{
 	width: 500px;
@@ -19,13 +19,13 @@ form{
 	margin: auto;
 	margin-top: 30px;
 	padding: 20px;
-	box-shadow: 0 0 20px 1px rbga(0,0,0,0.3);
 	position: relative;
+	background-color: rgba(255,255,255,0.8);
+	border-radius: 10px;
 }
 h1,h3{
 	text-align: center;
 	margin-top: 0;
-	color: rgba(0,0,0,0.7);
 }
 button,sumit, div, input,select,textarea{
 	display: block;
@@ -50,9 +50,10 @@ submit,button{
 }
 div,p{
 	text-align: center;
+	
 }
 div{
-
+	margin: auto;
 }
 p{
 	color: white;
