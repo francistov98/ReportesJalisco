@@ -22,7 +22,7 @@ form{
 	box-shadow: 0 0 20px 1px rbga(0,0,0,0.3);
 	position: relative;
 }
-h1{
+h1,h3{
 	text-align: center;
 	margin-top: 0;
 	color: rgba(0,0,0,0.7);
