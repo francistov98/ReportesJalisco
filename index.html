@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Formulario de delitos</title>
+		<link rel="stylesheet" href="estilos.css">
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXMSKAqRTnSYO0Y-mgmZmDa0yxv1LvbTc&callback=&libraries=&v=weekly"></script>
+	</head>
+	<body>			
+		<?php
+			include("enviarFormulario.php");
+		?>
+		<button onclick="location.href='inicioSesion.php'">Iniciar como Administrador</button>
+		<form method="post">
+			<h1>Reporte de la policia estatal</h1>
+			<p>Nombre de la persona que levanta el reporte(Poner Anonimo si no deseas dar tu nombre): <input type="text" name="nombreLevantador" requiered/></p>
+			<p>Fecha del delito: <input type="date" name="fechaDelito" required/></p>
+			<p>
+				Tipo de delito ocurrido: 
+				<select name="tipoDelito" requiered>
+					<option>Robo</option>
+					<option>Asesinato</option>
+					<option>Asalto</option>
+					<option>Secuestro</option>
+					<option>Violencia domestica</option>
+					<option>Venta de drogas</option>
+					<option>Venta de productos ilegales</option>
+					<option>Otro</option>
+				</select>
+			</p>
+			<p>En caso de seleccionar otro, indiquelo(Si no seleccionaste otro, pon N/A): <input type="text" name="otroDelito"requiered/>
+			</p>			
+			<p>
+				Direccion de los hechos(Si no conoces tu ubicacion, puedes verla en el marcador de Google Maps): <input type="text" name="localizacion"requiered/>
+			</p>
+			<div id="map"></div>
+			<p>Nombre del afectado(Si no lo reconoces, puedes poner "Desconocido"): <input type="text" name="nombreAfectado" requiered/></p>
+			<p>Detalles del delito o incidente:<br><textarea name="detallesDelito" requiered></textarea></p>
+			<p>Nombre del/los delincuente/s de saberlo(Si no lo reconoces, puedes poner "Desconocido"): <input type="text" name="nombreDelincuente"requiered/></p>
+			<p>Caracteristicas de el/los delincuentes: <br><textarea name="detallesDelincuente" requiered></textarea></p>
+			<p>Telefono de la persona que levanta el reporte(Si no deseas dar el dato, puedes poner N/A): <input type="text" name="id_formulario" requiered/></p>
+			<input type="submit" name="enviarFormulario" value="Enviar el reporte">
+			<script src="form.js"></script>
+		</form>
+	</body>
+</html>
