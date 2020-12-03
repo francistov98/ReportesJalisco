@@ -13,12 +13,12 @@
 		<link rel="stylesheet" href="estilos.css">
 	</head>
 	<body>
-		<a href='index.html'">Regrsar al formulario</a>	
 		<form method="post">
-			<h1>Iniciar sesion</h1>
+			<h1>Reporte de la policia estatal</h1>
 			<p>Usuario: <input type="text" name="id_admin" requiered/></p>
 			<p>Contraseña: <input type="password" name="contrasenaadmin" requiered/></p>
 			<input type="submit" name="submit" value="Iniciar sesion">
 		</form>
+		<a class="areaInicio" href='index.html'>Regrsar al formulario</a>	
 	</body>
 </html>

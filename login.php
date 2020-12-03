@@ -1,12 +1,13 @@
 <?php
 session_start(); // Iniciando sesion
+// Variable para almacenar el mensaje de error
 if (isset($_POST['submit'])) 
 {
 	if (empty($_POST['id_admin']) || empty($_POST['contrasenaadmin'])) 
 	{
-		?>
-		<h3>Completa todos los campos vacios</h3>
-		<?php
+			?>
+			<h3>Completa todos los campos vacios</h3>
+			<?php
 	}
 	else
 	{
@@ -27,7 +28,7 @@ if (isset($_POST['submit']))
 		{
 			?>
 			<h3>Tus credenciales son incorrectas...</h3>
-			<?php	
+			<?php
 		}
 	}
 }
