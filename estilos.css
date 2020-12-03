@@ -63,11 +63,25 @@ p{
 table {
    width: 100%;
    border: 1px solid #000;
+   background-color: white;
 }
-th, td {
-   width: 25%;
-   text-align: left;
-   vertical-align: top;
-   border: 1px solid #000;
-   border-spacing: 0;
+th {
+	padding: .2em .8em;
+	border: 1px solid rgba(20,50,90,.25);
+	background: rgba(0,102,255,.25);
+	text-align: center;
+}
+td{
+	padding: .2em .8em;
+    border: 1px solid rgba(16,76,167,.25);
+    background: rgba(90,156,255,.25);
+    text-align: left;
+}
+a{
+	background: rgba(0,0,0,0.7);
+	color: white;
+	padding: 10px 20px;
+	cursor: pointer;
+	border: none;
+	float: right;
 }
